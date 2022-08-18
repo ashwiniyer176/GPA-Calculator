@@ -20,7 +20,7 @@ export default function App() {
       requiredGPA=newCGPA*(data.creditsDone+data.creditsRegistered)
       requiredGPA-=data.creditsDone*data.CGPA
       requiredGPA/=data.creditsRegistered
-      setData({requiredGPA:requiredGPA})
+      setData({requiredGPA:requiredGPA,changed:false})
     }
     
   }, [data]);
@@ -28,6 +28,8 @@ export default function App() {
     return (
       <div className="layout">
         <h1>GPA Calculator!</h1>
+        <p> GPA calculator tells you what GPA you must earn in the current semester, to maintain a 9 CGPA. 
+        It does this based on the current CGPA, credits completed so far and credits registered in the current semester.</p>
         <InputForm setData={setData} />
       </div>
     );}
@@ -35,8 +37,10 @@ export default function App() {
     return (
       <div className="layout">
         <h1>GPA Calculator!</h1>
+        <p> GPA calculator tells you what GPA you must earn in the current semester, to maintain a 9 CGPA. 
+        It does this based on the current CGPA, credits completed so far and credits registered in the current semester.</p>
         <InputForm setData={setData} />
-        <h2> {data.requiredGPA} </h2>
+        <h2> The GPA you need to score this semester is {data.requiredGPA} </h2>
       </div>
     );
     }

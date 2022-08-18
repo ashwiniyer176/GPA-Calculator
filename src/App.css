@@ -3,7 +3,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: aquamarine;
+}
+
+p{
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 form{
@@ -20,6 +25,10 @@ form{
 
 .form-element button{
   align-self: center;
+}
+
+input{
+  border: 1px solid gray;
 }
 
 label{

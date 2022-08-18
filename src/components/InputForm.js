@@ -18,15 +18,15 @@ export default function InputForm(props) {
     <div className="layout">
       <form onSubmit={handleChange}>
       <div className="form-element">
-        <label htmlFor="cgpa">GPA</label>
+        <label htmlFor="cgpa">CGPA:</label>
         <input name="cgpa" type="text"></input>
       </div>
       <div className="form-element">
-        <label htmlFor="creditsDone">Credits Done</label>
+        <label htmlFor="creditsDone">Credits Completed:</label>
         <input name="creditsDone" type="text"></input>
       </div>
       <div className="form-element">
-        <label htmlFor="creditsRegistered">Credits Registered</label>
+        <label htmlFor="creditsRegistered">Credits Registered:</label>
         <input name="creditsRegistered" type="text"></input>
       </div>
       <div className="form-element">
